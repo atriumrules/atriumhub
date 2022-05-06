@@ -1,1 +1,1 @@
-loadstring(game:HttpGet('https://atriumhub.000webhostapp.com/script'))()
+loadstring(game:HttpGet('https://http://atrium.web1337.net/script'))()
