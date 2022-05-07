@@ -5,7 +5,7 @@ local num = 12
 
 if syn and syn.request then
 
-	local check = "https://http://atrium.web1337.net/check.php?key=" .. key
+	local check = "https://atrium.web1337.net/check.php?key=" .. key
 
 	if game:HttpGet(check) == "Whitelisted" then
 
