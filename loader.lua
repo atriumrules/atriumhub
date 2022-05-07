@@ -9,7 +9,7 @@ if syn and syn.request then
 
 	if game:HttpGet(check) == "Whitelisted" then
 
-		loadstring(game:HttpGet("https://http://atrium.web1337.net/script.lua"))()
+		loadstring(game:HttpGet("https://atrium.web1337.net/script.lua"))()
 
 	else
 
