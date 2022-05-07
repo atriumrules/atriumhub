@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://atrium.web1337.net/script.lua"))()
+loadstring(game:HttpGet("http://atrium.web1337.net/script.lua"))()
