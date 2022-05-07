@@ -1,12 +1,20 @@
-local key = _G.Key
+local key = _G.key
 
-if not key then
-game.Players.LocalPlayer:Kick("Nice try bozo")
-end
+local url1 = "https://atrium.web/scripts"
+local num = 12
 
-local check = "https://http://atrium.web1337.net/check.php?key=" .. key
-if game:HttpGet(check) == "Whitelisted" then
-loadstring(game:HttpGet("https://http://atrium.web1337.net/script.lua"))()
-else
-game.Players.LocalPlayer:Kick("Sorry! This key is incorrect, check the discord for the new key :D")
+if syn and syn.request then
+
+	local check = "https://http://atrium.web1337.net/check.php?key=" .. key
+
+	if game:HttpGet(check) == "Whitelisted" then
+
+		loadstring(game:HttpGet("https://http://atrium.web1337.net/script.lua"))()
+
+	else
+
+		game.Players.LocalPlayer:Kick("This key is not valid, sorry!")
+
+	end
+
 end
