@@ -1,3 +1,5 @@
+_G.Key = "ok"
+
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/Jxereas/UI-Libraries/main/notification_gui_library.lua", true))()
 local player = game:GetService("Players").LocalPlayer
 key = _G.Key
@@ -14,13 +16,15 @@ end
 local PremiumUsers = {
 3589438125 -- Owner of Script
 }
-wait(2.5)
+if key == "test" then
+    wait(2.5)
 if table.find(PremiumUsers, player.UserId) then
     Notification.new("info", "Checking", "Checking if you're a premium user...")
     wait(2)
-    Notification.new("info", "Premium Commands", "Commands Loaded")
+    Notification.new("info", "Premium Commands", "Commands Loaded - Say :cmds for commands")
 else
     Notification.new("info", "Checking", "Checking if you're a premium user...")
     wait(2)
     Notification.new("info", "Premium Commands", "Not a premium User!")
+end
 end
