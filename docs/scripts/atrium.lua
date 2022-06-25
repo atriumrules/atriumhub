@@ -1,4 +1,5 @@
 key = _G.Key 
 if key == "test" then
 	print("working")
-end
+else
+game.LocalPlayer:Kick("Wrong Key!")
